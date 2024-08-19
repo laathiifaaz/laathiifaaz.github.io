@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: url(pic/bg-fix.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 83%;
+    display: flex;
+    margin: auto;
+    padding: 10px 9;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.399);
+}
+
+.navbar .logo{
+    width: 40px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-left: -2%;
+}
+
+.navbar a:hover {
+    color: rgb(59, 110, 230);
+}
+
+ul{
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    transition: .4s ease;
+
+}
+
+ul li a:hover{
+    color: rgb(59, 110, 230);
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 13%;
+}
+
+.info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span{
+    color: rgb(230,104,59);
+}
+
+.info a{
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(59,174,209);
+}
+
+.image{
+    width: 40%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    top: 200px;
+}
+
+.image img{
+    position: absolute;
+    height: 40%;
+    left: 40%;
+    transform: translate(-55%,-170%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .girl{
+    left: 55%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center; /* Menempatkan ikon di tengah secara horizontal */
+    align-items: center;     /* Menempatkan ikon di tengah secara vertikal */
+    height: 10vh;   
+}
+
+.icons a{
+    text-decoration: none;
+    color: #000; 
+}
+
+.icons ion-icon{
+    margin: 0 10px;
+    color: #000;
+    font-size: 40px;
+    transition: .4s ease;
+}
+
+.icons ion-icon:hover{
+    color: rgb(59,174,209);
+}
+
+.about-me {
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    }
+
+.about-me h1 {
+    margin-bottom: 1.5%;
+}
+.about-me span {
+    color: rgb(230,104,59);
+}
+
+.carousel {
+    width: 472px; /* Atur lebar carousel sesuai keinginan */
+    height: 354px; /* Atur tinggi carousel sesuai keinginan */
+    margin: auto; /* Untuk memusatkan carousel */
+}
+
+.carousel-item {
+    height: 354px; /* Pastikan tinggi item sesuai dengan tinggi carousel */
+}
+
+.carousel img {
+    width: 100%; /* Pastikan gambar menyesuaikan dengan lebar carousel */
+    height: 100%; /* Pastikan gambar menyesuaikan dengan tinggi carousel */
+    object-fit: cover; /* Agar gambar tetap proporsional */
+}
+
+
+.my-activity {
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 13%;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.my-activity h1 {
+    margin-bottom: 1.5%;
+}
+
+.my-activity span {
+    color: rgb(230,104,59);
+}
+
+.connect {
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.connect h1 {
+    margin-bottom: 1%;
+}
+
+.connect span {
+    color: rgb(230,104,59);
+}
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
